@@ -78,19 +78,7 @@ Atualmente cursando **Tecnólogo em Análise e Desenvolvimento de Sistemas** (co
 
 ---
 
-### Projetos em destaque
-
-**[SmartCommerce](https://github.com/Bieldev1/smart-commerce)** — plataforma de e-commerce com chat de suporte em tempo real (SignalR) e assistente de produto via IA (Groq/Gemini), construída em Clean Architecture com CQRS e DDD.
-
-- Domain layer isolado, sem dependências externas — Entities, Value Objects, Aggregates, Domain Events
-- Abstração de provider de IA (`IAIProvider`): troca entre Groq e Gemini sem tocar em regra de negócio
-- SignalR com sessões isoladas por cliente via Hub Groups
-- ASP.NET Core Identity com JWT + Refresh Token + RBAC (Admin/Customer/Support)
-- Testes unitários e de integração (xUnit + Moq), setup completo via Docker Compose
-
-🔗 [Demo ao vivo](https://smart-commerce-delta.vercel.app) · [Código](https://github.com/Bieldev1/smart-commerce)
-
-<br />
+### Projeto em destaque
 
 **[NotificationHub](https://github.com/Bieldev1/notification-hub)** — hub de notificações multi-canal com fila assíncrona (RabbitMQ), retry configurável e Dead Letter Queue, 100% containerizado.
 
