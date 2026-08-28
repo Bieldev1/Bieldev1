@@ -1,13 +1,13 @@
 <h1 align="center">Gabriel Rocha Santos</h1>
-<h3 align="center">Desenvolvedor Full Stack .NET | C# · ASP.NET Core · Vue.js · Azure</h3>
 
 <p align="center">
-Clean Architecture · CQRS · DDD aplicados em produção — não em teoria.
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=2E8B57&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack+.NET;C%23+%C2%B7+ASP.NET+Core+%C2%B7+Vue.js+%C2%B7+Azure;Clean+Architecture+%C2%B7+CQRS+%C2%B7+DDD+em+produ%C3%A7%C3%A3o" alt="Typing SVG" />
 </p>
 
 <p align="center">
   <a href="https://portifolio-umber-eight.vercel.app"><img src="https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
   <a href="https://linkedin.com/in/gabriel-rocha-santos-105484230"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://wa.me/5511963854807"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 </p>
 
 ---
@@ -45,11 +45,18 @@ Atualmente cursando **Tecnólogo em Análise e Desenvolvimento de Sistemas** (co
 <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
 </p>
 
+**Dados & Mensageria**
+<p>
+<img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" />
+</p>
+
 **Cloud & DevOps**
 <p>
 <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white" />
 </p>
 
 **Arquitetura & Práticas**
@@ -57,12 +64,26 @@ Atualmente cursando **Tecnólogo em Análise e Desenvolvimento de Sistemas** (co
 <img src="https://img.shields.io/badge/Clean_Architecture-black?style=flat-square" />
 <img src="https://img.shields.io/badge/DDD-black?style=flat-square" />
 <img src="https://img.shields.io/badge/CQRS-black?style=flat-square" />
+<img src="https://img.shields.io/badge/Result_Pattern-black?style=flat-square" />
 <img src="https://img.shields.io/badge/xUnit-Testing-purple?style=flat-square" />
 </p>
 
 ---
 
-### Projeto em destaque
+### GitHub
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Bieldev1&show_icons=true&theme=transparent&hide_border=true&title_color=2E8B57&icon_color=2E8B57&text_color=c9d1d9" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bieldev1&layout=compact&theme=transparent&hide_border=true&title_color=2E8B57&text_color=c9d1d9" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=Bieldev1&theme=transparent&hide_border=true&ring=2E8B57&fire=2E8B57&currStreakLabel=2E8B57" />
+</p>
+
+---
+
+### Projetos em destaque
 
 **[SmartCommerce](https://github.com/Bieldev1/smart-commerce)** — plataforma de e-commerce com chat de suporte em tempo real (SignalR) e assistente de produto via IA (Groq/Gemini), construída em Clean Architecture com CQRS e DDD.
 
@@ -73,6 +94,18 @@ Atualmente cursando **Tecnólogo em Análise e Desenvolvimento de Sistemas** (co
 - Testes unitários e de integração (xUnit + Moq), setup completo via Docker Compose
 
 🔗 [Demo ao vivo](https://smart-commerce-delta.vercel.app) · [Código](https://github.com/Bieldev1/smart-commerce)
+
+<br />
+
+**[NotificationHub](https://github.com/Bieldev1/notification-hub)** — hub de notificações multi-canal com fila assíncrona (RabbitMQ), retry configurável e Dead Letter Queue, 100% containerizado.
+
+- Domain isolado sem dependências externas — Result Pattern e `Entity<TId>` com igualdade por Id, CQRS com MediatR
+- Desacopla aceitar o pedido de processá-lo: a API responde na hora, uma fila dedicada processa o envio, com retry automático e Dead Letter Queue em caso de falha persistente
+- Integração real de e-mail via API REST (Brevo), com provider mockável selecionável por configuração para dev local
+- Dockerfile multi-stage (SDK → runtime) + `docker-compose` orquestrando API, PostgreSQL e RabbitMQ, com retry/backoff de conexão para lidar com race conditions de healthcheck
+- Testes unitários (xUnit + Moq) cobrindo entidade, Result Pattern e o handler de negócio
+
+🔗 [Código](https://github.com/Bieldev1/notification-hub)
 
 ---
 
