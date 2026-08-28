@@ -73,11 +73,6 @@ Atualmente cursando **Tecnólogo em Análise e Desenvolvimento de Sistemas** (co
 ### GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Bieldev1&show_icons=true&theme=transparent&hide_border=true&title_color=2E8B57&icon_color=2E8B57&text_color=c9d1d9" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bieldev1&layout=compact&theme=transparent&hide_border=true&title_color=2E8B57&text_color=c9d1d9" />
-</p>
-
-<p align="center">
   <img src="https://streak-stats.demolab.com/?user=Bieldev1&theme=transparent&hide_border=true&ring=2E8B57&fire=2E8B57&currStreakLabel=2E8B57" />
 </p>
 
